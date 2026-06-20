@@ -35,7 +35,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     keyboard = [
         [InlineKeyboardButton("📊 تحليل مباراة", callback_data="analyze")],
-        [InlineKeyboardButton("💳 الاشتراك - 500 دج/شهر", callback_data="subscribe")],
+        [InlineKeyboardButton("💳 الاشتراك - 1000 دج/أسبوع", callback_data="subscribe")],
         [InlineKeyboardButton("📋 حالة اشتراكي", callback_data="status")],
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
@@ -61,7 +61,7 @@ async def analyze_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not db.is_subscribed(user_id):
         await update.message.reply_text(
             "🔒 *هذه الميزة للمشتركين فقط!*\n\n"
-            "اشترك الآن بـ 500 دج/شهر للوصول الكامل\n"
+            "اشترك الآن بـ 1000 دج/أسبوع للوصول الكامل\n"
             "استخدم /subscribe للاشتراك",
             parse_mode="Markdown"
         )
