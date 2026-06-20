@@ -15,8 +15,8 @@ from datetime import datetime
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
 ADMIN_ID = int(os.environ.get("ADMIN_ID", "123456789"))
 BARIDIMOB_NUMBER = os.environ.get("BARIDIMOB_NUMBER", "0XXXXXXXXX")
-SUBSCRIPTION_PRICE = 500
-SUBSCRIPTION_DAYS = 30
+SUBSCRIPTION_PRICE = 1000
+SUBSCRIPTION_DAYS = 7
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
