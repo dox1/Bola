@@ -12,9 +12,9 @@ from datetime import datetime
 # ═══════════════════════════════════════════
 #              إعدادات البوت
 # ═══════════════════════════════════════════
-BOT_TOKEN = "8944698705:AAHkT_POCsEd99fjujaot3CyCfd-hC33wTc"
-ADMIN_ID = 6169751634  # ← ضع ID التيليغرام الخاص بك
-BARIDIMOB_NUMBER = "00799999004457266606"  # ← رقم بريدي موب الخاص بك
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
+ADMIN_ID = int(os.environ.get("ADMIN_ID", "123456789"))
+BARIDIMOB_NUMBER = os.environ.get("BARIDIMOB_NUMBER", "0XXXXXXXXX")
 SUBSCRIPTION_PRICE = 500
 SUBSCRIPTION_DAYS = 30
 
